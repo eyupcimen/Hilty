@@ -23,5 +23,4 @@ public class Temperature {
     public init () {
         
     }
-    
 }

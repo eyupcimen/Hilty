@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		CEC99D4C2420CDA5004F995B /* Hilty.h in Headers */ = {isa = PBXBuildFile; fileRef = CEC99D4A2420CDA5004F995B /* Hilty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEC99D532420CDB3004F995B /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC99D522420CDB3004F995B /* Calculate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CEC99D472420CDA5004F995B /* Hilty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hilty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC99D4A2420CDA5004F995B /* Hilty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hilty.h; sourceTree = "<group>"; };
 		CEC99D4B2420CDA5004F995B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC99D522420CDB3004F995B /* Calculate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				CEC99D4A2420CDA5004F995B /* Hilty.h */,
+				CEC99D522420CDB3004F995B /* Calculate.swift */,
 				CEC99D4B2420CDA5004F995B /* Info.plist */,
 			);
 			path = Hilty;
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					CEC99D462420CDA5004F995B = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC99D532420CDB3004F995B /* Calculate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		CEC99D502420CDA5004F995B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -275,6 +281,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.eyupcimen.Hilty;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +290,7 @@
 		CEC99D512420CDA5004F995B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
